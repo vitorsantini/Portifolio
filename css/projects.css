@@ -1,0 +1,51 @@
+@import url(menu.css);
+
+.container-projetos {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.swiper {
+    margin: 32px;
+}
+
+.box-projeto {
+    background-color: var(--black);
+    width: 311px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.projects {
+    overflow: hidden;
+}
+
+.info {
+    margin: 16px;
+}
+
+.image-projeto {
+    height: 200px;
+    background-color: var(--gray-600);
+}
+
+.projeto-name h3 {
+    color: var(--gray-50);
+    margin: 8px 0;
+}
+
+.projeto-description p {
+    color: var(--gray-50);
+    font-size: 12px;
+    text-align: justify;
+}
+
+.swiper-button-next {
+    fill: black;
+}

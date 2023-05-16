@@ -1,0 +1,46 @@
+@import url(menu.css);
+
+.container-contato {
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.contato-title {
+
+    margin: 0 0 6rem 0;
+}
+
+.contato-title h3{
+    font-size: 20px;
+    color: var(--gray-50);
+    font-weight: 400;
+}
+
+.box-contato {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--gray-850);
+    box-shadow: 0 4px 4px var(--dark-gray-background);
+    border-radius: 4px;
+    padding: .5rem .5rem;
+    margin: 0 0 1rem 0;
+}
+
+.box-cv {
+    background-color: var(--black);
+    box-shadow: 0 4px 4px var(--dark-gray-background);
+    border-radius: 4px;
+    padding: .5rem .5rem;
+    margin: 15rem 0 1rem 0;
+}
+
+.box-cv a {
+    color: var(--gray-400);
+    list-style: none;
+}

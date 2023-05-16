@@ -1,0 +1,111 @@
+@import url(menu.css);
+
+.container-home {
+    width: 100vw;
+    height: 100vh;
+}
+
+ /* logo-code, linkedin e github */
+.top-icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 16px;
+}
+
+/* Apresentação */
+
+.me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 85%;
+    margin-top: 16px; 
+}
+
+.me img {
+    width: 174px;
+    height: 223px;
+    border-radius: 156px;
+}
+
+.me-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+}
+
+.me-text p:not(.loading){
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--gray-50);
+}
+
+.me-text div{
+    display: flex;
+    gap: 4px;
+}
+
+.me-text div p {
+    text-align: center;
+}
+
+
+.me-dot {
+    height: 5px;
+    width: 5px;
+    border: 2px solid var(--black);
+    background-color: var(--black);
+    border-radius: 50%;
+    transform: translateY(10px)
+}
+
+/* Animação carregando */
+
+.loader {
+    animation: is-rotating 1s infinite;
+    height: 50px;
+    width: 50px;
+    border: 6px solid var(--dark-gray-background);
+    border-radius: 50%;
+    border-top-color: var(--gray-700);
+}
+
+@keyframes is-rotating {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.loading {
+    font-size: 12px;
+    color: var(--gray-700);
+}
+
+/* Animação Digitação */
+
+#oi {
+    border-right: 2px solid var(--gray-50);
+    animation: blinkCursor 1s infinite normal, typing 4s steps(20) 1s normal both;
+    white-space: nowrap;
+    overflow: hidden;
+}
+@keyframes blinkCursor{
+    from {
+        border-right-color: var(--gray-50);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 12.2em;
+    }
+}

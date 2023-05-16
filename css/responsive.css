@@ -1,0 +1,60 @@
+@media screen and (min-width: 768px) {
+
+    .nav-bar{
+         padding: 0 1.5rem;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    
+}
+
+@media screen and (min-width: 1024px) {
+    
+
+    .nav-list {
+        display: flex;
+    }
+
+    #mobile-menu-icon {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .nav-bar{
+         padding: 0 4.75rem;
+    }
+    
+}
+
+@media screen and (min-width: 1366px) {
+
+    .nav-bar{
+         padding: 0 4.75rem;
+    }
+    
+}
+
+@media screen and (min-width: 1440px) {
+
+    .nav-bar{
+         padding: 0 10rem;
+    }
+    
+}
+
+@media screen and (min-width: 1920px) {
+
+    .nav-bar{
+         padding: 0 24.75rem;
+    }
+    
+}
