@@ -45,6 +45,13 @@ div .image-projeto {
     background-color: var(--gray-600);                                                                      
 }
 
+div.image-projeto-1 {
+    background-image: url(../img/Projeto\ Piano.png);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center;
+}
+
 .projeto-name h3 {
     color: var(--me-text-color);
     margin: 8px 0;
