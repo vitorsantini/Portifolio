@@ -30,15 +30,9 @@
     --fonte2: 'Montserrat', sans-serif;
 }
 
-.dark-mode:root {
-    --gray-850: #e0e0e0;
-    --black: #ffffff;
-    --bg-color: #eeeeee;
-    --me-text-color: #212121;
-    --dark-gray-background: #e0e0e0;
-    --gray-400: #212121;
+html {
+    scroll-behavior: smooth;
 }
-
 
 body {
     background-color: var(--bg-color);

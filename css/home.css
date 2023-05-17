@@ -112,7 +112,7 @@ img#icone {
 
 #oi {
     border-right: 2px solid var(--me-text-color);
-    animation: blinkCursor 1s infinite normal, typing 4s steps(20) 1s normal both;
+    animation: blinkCursor 1s infinite normal, typing 2s steps(20) 1s normal both;
     white-space: nowrap;
     overflow: hidden;
 }
