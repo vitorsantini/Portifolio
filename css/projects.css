@@ -59,6 +59,21 @@ div.image-projeto-2 {
     background-position: center center;
 }
 
+div.image-projeto-3 {
+    background-image: url(../img/Em\ Breve.png);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center;
+}
+
+div.image-projeto-4 {
+    background-image: url(../img/Em\ Breve.png);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center;
+}
+
+
 
 .projeto-name h3 {
     color: var(--me-text-color);
