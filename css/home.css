@@ -9,8 +9,32 @@
 .top-icons {
     display: flex;
     justify-content: space-between;
-    margin: 0 16px;
+    padding: 0 16px;
 }
+
+.top-icons img:hover, .top-icons a:hover {
+    transform: scale(1.3);
+} 
+
+.linkedin{
+    background-image: url(/ligthmode/Linkedin3-lm.svg);
+}
+
+.icone-lm {
+    height: 32px;
+    width: 32px;
+}
+
+img#icone {
+    width: 44px;
+    height: 28px;
+}
+
+.code {
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* Apresentação */
 
@@ -40,7 +64,7 @@
 .me-text p:not(.loading){
     font-size: 20px;
     font-weight: 500;
-    color: var(--gray-50);
+    color: var(--me-text-color);
 }
 
 .me-text div{
@@ -87,14 +111,14 @@
 /* Animação Digitação */
 
 #oi {
-    border-right: 2px solid var(--gray-50);
+    border-right: 2px solid var(--me-text-color);
     animation: blinkCursor 1s infinite normal, typing 4s steps(20) 1s normal both;
     white-space: nowrap;
     overflow: hidden;
 }
 @keyframes blinkCursor{
     from {
-        border-right-color: var(--gray-50);
+        border-right-color: var(--me-text-color);
     }
     to {
         border-right-color: transparent;

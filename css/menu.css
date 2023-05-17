@@ -6,7 +6,7 @@
 
 :root {
 
-    --gray-50: #fafafa;
+    --me-text-color: #fafafa;
     --gray-100: #f5f5f5;
     --gray-200: #eeeeee;
     --gray-300: #e0e0e0;
@@ -14,10 +14,12 @@
     --gray-500: #9e9e9e;
     --gray-600: #757575;
     --gray-700: #616161;
+    --gray-850: #404040;
     --gray-800: #424242;
-    --gray-900: #212121;
+    --bg-color: #212121;
     --dark-gray-background: #121212;
 
+    --black2: #000001;
     --black: #000000;
     --white: #ffffff;
 
@@ -28,10 +30,20 @@
     --fonte2: 'Montserrat', sans-serif;
 }
 
+.dark-mode:root {
+    --gray-850: #e0e0e0;
+    --black: #ffffff;
+    --bg-color: #eeeeee;
+    --me-text-color: #212121;
+    --dark-gray-background: #e0e0e0;
+    --gray-400: #212121;
+}
+
+
 body {
-    background-color: var(--gray-900);
+    background-color: var(--bg-color);
     font-family: var(--fonte);
-    margin-top: 4rem;
+    padding-top: 4rem;
 }
 
 header {
@@ -184,7 +196,7 @@ ul .nav-item {
 
 .mobile-menu-list.active #mobile-nav-list {
     visibility: visible;
-    height: 185.6px;
+    height: 225.6px;
 }
 
 .mobile-menu-list ul {
@@ -246,3 +258,18 @@ ul .nav-item {
 #mobile-menu-icon.active .line3 {
     transform: rotate(45deg) translate(-5px, -5px);
 }
+
+/* Animação de Scroll */
+
+.hidden {
+    opacity: 0;
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+}
+
+.hiden {
+    visibility: hidden;
+  }

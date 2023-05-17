@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt_BR" id="html" class="">
 
 <head>
     <meta charset="UTF-8">
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/sobre-mim.css">
     <link rel="stylesheet" href="css/formacao.css">
     <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/exepriencia.css">
     <link rel="stylesheet" href="css/contato.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -21,22 +22,26 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
-<body>
+<body id="home" >
     <header>
         <nav class="nav-bar">
             <div class="main-title">
-                <h1>Vitor Santini</h1>
+                <a href="#home"><h1>Vitor Santini</h1></a>
             </div>
             <div class="nav-container">
                 <div class="container-dark-nav">
                     <div class="icon-list" id="dark-theme-icon">
-                        <button><span class="material-symbols-outlined" id="dark-theme-button">dark_mode</span></button>
+                        <button><span class="material-symbols-outlined dm" id="dark-theme-button">dark_mode</span></button>
+                        <button><span class="material-symbols-outlined lm hiden"id="dark-light-button">
+                            light_mode
+                            </span></button>
                     </div>
                     <ul class="nav-list">
-                        <li class="nav-item"><a href="#" class="nav-link">Sobre mim</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Formação</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+                        <li class="nav-item"><a href="#sobre-mim" class="nav-link">Sobre mim</a></li>
+                        <li class="nav-item"><a href="#formacao" class="nav-link">Formação</a></li>
+                        <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+                        <li class="nav-item"><a href="#experiencias" class="nav-link">Habilidades</a></li>
+                        <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
                     </ul>
                 </div>
                 <div id="mobile-menu-icon">
@@ -48,20 +53,30 @@
         </nav>
         <div class="mobile-menu-list">
             <ul id="mobile-nav-list">
-                <li class="nav-item mobile-nav-item"><a href="#" class="nav-link">Sobre mim</a></li>
-                <li class="nav-item mobile-nav-item"><a href="#" class="nav-link">Formação</a></li>
-                <li class="nav-item mobile-nav-item"><a href="#" class="nav-link">Projetos</a></li>
-                <li class="nav-item mobile-nav-item"><a href="#" class="nav-link">Contato</a></li>
+                <li class="nav-item mobile-nav-item"><a href="#sobre-mim" class="nav-link">Sobre mim</a></li>
+                <li class="nav-item mobile-nav-item"><a href="#formacao" class="nav-link">Formação</a></li>
+                <li class="nav-item mobile-nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li class="nav-item mobile-nav-item"><a href="#experiencias" class="nav-link">Habilidades</a></li>
+                <li class="nav-item mobile-nav-item"><a href="#contato" class="nav-link">Contato</a></li>
             </ul>
         </div>
     </header>
     <main>
-        <div class="container-home">
+        <div class="container-home hidden">
             <div class="top-icons">
-                <img id="code" src="icones/code.svg" alt="Simbolo de Tag HTML">
+                <div class="image-container code">
+                    <img class="dm" id="icone code" src="icones/code.svg" alt="Simbolo de Tag HTML">
+                    <img class="lm hiden" id="icone code-lm" src="ligthmode/Group.png" alt="Simbolo de Tag HTML">
+                </div>
                 <div class="social-icons">
-                    <a href="#"><img class="icone" src="icones/Linkedin.svg" alt="Linkedin"></a>
-                    <a href="#"><img class="icone" src="icones/Github.svg" alt=""></a>
+                    <div class="image-container">
+                        <a href="#"><img class="icone linkedin dm" src="icones/Linkedin.svg" alt="Linkedin"></a>
+                        <a href="#"><img class="icone github dm" src="icones/Github.svg" alt=""></a>
+                    </div>
+                    <div class="image-container">
+                        <a href="#"><img class="icone icone-lm linkedin-lm lm hiden" src="ligthmode/Linkedin3-lm.svg" alt="Linkedin"></a>
+                        <a href="#"><img class="icone  icone-lm github-lm lm hiden" src="ligthmode/Github3-lm.svg" alt=""></a>
+                    </div>
                 </div>
             </div>
             <div class="me">
@@ -82,8 +97,8 @@
 
             </div>
         </div>
-        <div class="container-sobre-mim">
-            <div class="section-title">
+        <div class="container-sobre-mim hidden" id="sobre-mim">
+            <div class="section-title title">
                 <h2 class="section-title-text">Sobre Mim</h2>
                 <div class="title-line"></div>
             </div>
@@ -106,7 +121,7 @@
 
             </div>
         </div>
-        <div class="container-formacao">
+        <div class="container-formacao hidden" id="formacao">
             <div class="formacao-title title">
                 <h2>Formação</h2>
                 <div class="title-line"></div>
@@ -174,9 +189,77 @@
                 </div>
             </div>
         </div>
-        <div class="container-projetos">
+        <div class="container-experiencias hidden" id="experiencias">
             <div class="formacao-title title">
-                <h2>Formação</h2>
+                <h2>Habilidades e Conhecimentos</h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="icons">
+                <div class="card git dm">
+                    <img class="icone" src="icones/GIT ICON.svg" alt="Git">
+                    <div>
+                        <p class="icon-text">Git</p>
+                    </div>
+                </div>
+                <div class="card git-lm lm hiden">
+                    <img class="icone" src="ligthmode/GITICON3-lm.svg" alt="Git">
+                    <div>
+                        <p class="icon-text">Git</p>
+                    </div>
+                </div>
+                <div class="card html dm">
+                    <img class="icone" src="icones/html.svg" alt="HTML">
+                    <div>
+                        <p class="icon-text">HTML</p>
+                    </div>
+                </div>
+                <div class="card html-lm lm hiden">
+                    <img class="icone" src="ligthmode/HTML3-lm.svg" alt="HTML">
+                    <div>
+                        <p class="icon-text">HTML</p>
+                    </div>
+                </div>
+                <div class="card css dm">
+                    <img class="icone" src="icones/CSS.svg" alt="CSS">
+                    <div>
+                        <p class="icon-text">CSS</p>
+                    </div>
+                </div>
+                <div class="card css-lm lm hiden">
+                    <img class="icone" src="ligthmode/CSS3-lm.svg" alt="CSS">
+                    <div>
+                        <p class="icon-text">CSS</p>
+                    </div>
+                </div>
+                <div class="card figma dm ">
+                    <img class="icone" src="icones/Figma.svg" alt="Figma">
+                    <div>
+                        <p class="icon-text">Figma</p>
+                    </div>
+                </div>
+                <div class="card figma-lm lm hiden">
+                    <img class="icone" src="ligthmode/Figma-lm.svg" alt="Figma">
+                    <div>
+                        <p class="icon-text">Figma</p>
+                    </div>
+                </div>
+                <div class="card js dm">
+                    <img class="icone" src="icones/jS.svg" alt="Javascript">
+                    <div>
+                        <p class="icon-text">Javascript</p>
+                    </div>
+                </div>
+                <div class="card js-lm lm hiden">
+                    <img class="icone" src="ligthmode/Js3-lm.svg" alt="Javascript">
+                    <div>
+                        <p class="icon-text">Javascript</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-projetos hidden" id="projetos">
+            <div class="formacao-title title">
+                <h2>Projetos</h2>
                 <div class="title-line"></div>
             </div>
             <div class="swiper mySwiper">
@@ -186,7 +269,7 @@
                             <div class="image-projeto image-projeto-1"></div>
                             <div class="text-projeto text-projeto-1">
                                 <div class="projeto-name projeto-name-1">
-                                    <h3>Nome Projeto</h3>
+                                    <a href=""><h3>Nome Projeto</h3></a>
                                     <div class="projeto-description projeto-description-1">
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam nostrum
                                             necessitatibus ipsum
@@ -203,7 +286,7 @@
                             <div class="image-projeto image-projeto-1"></div>
                             <div class="text-projeto text-projeto-1">
                                 <div class="projeto-name projeto-name-1">
-                                    <h3>Nome Projeto</h3>
+                                    <a href=""><h3>Nome Projeto</h3></a>
                                     <div class="projeto-description projeto-description-1">
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam nostrum
                                             necessitatibus ipsum
@@ -220,7 +303,7 @@
                             <div class="image-projeto image-projeto-1"></div>
                             <div class="text-projeto text-projeto-1">
                                 <div class="projeto-name projeto-name-1">
-                                    <h3>Nome Projeto</h3>
+                                    <a href=""><h3>Nome Projeto</h3></a>
                                     <div class="projeto-description projeto-description-1">
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam nostrum
                                             necessitatibus ipsum
@@ -237,7 +320,7 @@
                             <div class="image-projeto image-projeto-1"></div>
                             <div class="text-projeto text-projeto-1">
                                 <div class="projeto-name projeto-name-1">
-                                    <h3>Nome Projeto</h3>
+                                    <a href=""><h3>Nome Projeto</h3></a>
                                     <div class="projeto-description projeto-description-1">
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam nostrum
                                             necessitatibus ipsum
@@ -249,26 +332,36 @@
                             </div>
                         </div>
                     </div>
-                </div>    
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-        </div>
-        <div class="container-contato">
-            <div class="contato-title title">
-                <div>
-                    <h3>Contato</h3>
                 </div>
+            </div>
+            <div class="swiper-options">
+                <div class="swiper-buttons">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="container-contato hidden" id="contato">
+            <div class="formacao-title title">
+                <h2>Contato</h2>
                 <div class="title-line"></div>
             </div>
-            <div>
-                <div class="box-contato">
+            <div class="contato-info">
+                <div class="box-contato dm">
                     <img src="icones/whatsapp.svg" alt="Icone Whatsapp">
                     <p>(17) 99655-8289</p>
                 </div>
-                <div class="box-contato">
+                <div class="box-contato lm hiden">
+                    <img src="ligthmode/whatsapp-lm.svg" alt="Icone Whatsapp">
+                    <p>(17) 99655-8289</p>
+                </div>
+                <div class="box-contato dm">
                     <img src="icones/Email.svg" alt="Icone Email">
+                    <p>santini.vitor@hotmail.com</p>
+                </div>
+                <div class="box-contato lm hiden">
+                    <img src="ligthmode/Email-lm.svg" alt="Icone Email">
                     <p>santini.vitor@hotmail.com</p>
                 </div>
             </div>
@@ -286,9 +379,12 @@
             </div>
         </div>
     </footer>
-    
+
 </body>
+<script src="js/scroll-animation.js"></script>
 <script src="js/mobile-navbar.js"></script>
-<script src="js/swiper.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/darkmode.js"></script>
+
 </html>

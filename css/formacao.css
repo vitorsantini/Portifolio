@@ -40,10 +40,6 @@
     margin-bottom: 64px;
 }
 
-.formacao-title h2{
-    color: var(--gray-200);
-}
-
 .formacao-box {
     display: flex;
     flex-direction: column;

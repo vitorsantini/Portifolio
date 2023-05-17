@@ -63,3 +63,6 @@
 .swiper {
     margin: 8rem
 }
+h4 a {
+    text-decoration: none;   
+}

@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    justify-content: space-evenly;
     width: 100vw;
     height: 100vh;
 }
@@ -41,6 +42,16 @@
 }
 
 .box-cv a {
-    color: var(--gray-400);
+    color: var(--me-text-color);
     list-style: none;
+}
+
+.contato-info div:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+.box-cv:hover{
+    cursor: pointer;
+    transform: scale(1.3);
 }
