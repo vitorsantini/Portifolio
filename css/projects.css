@@ -52,6 +52,14 @@ div.image-projeto-1 {
     background-position: center center;
 }
 
+div.image-projeto-2 {
+    background-image: url(../img/Porti.png);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center;
+}
+
+
 .projeto-name h3 {
     color: var(--me-text-color);
     margin: 8px 0;
