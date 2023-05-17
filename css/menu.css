@@ -272,4 +272,8 @@ ul .nav-item {
 
 .hiden {
     visibility: hidden;
+}
+
+.box-contato a {
+    text-decoration: none;
   }

@@ -10,10 +10,6 @@
     .nav-list {
         display: none;
     }
-
-    .container-formacao {
-        height: 100vh;
-    }
     
 }
 
@@ -48,6 +44,10 @@
     }
     .top-icons a img{
         width: 48px;
+    }
+    .card img {
+        width: 48px;
+        height: 48px;
     }
 
     .me {
@@ -193,6 +193,11 @@
         width: 56px;
     }
 
+    .card img {
+        width: 56px;
+        height: 56px;
+    }
+
     .footer-text {
         margin: 0 4.75rem;
     }
@@ -213,22 +218,16 @@
         margin: 0 160px;
     }
 
-    div .swiper {
-        margin: 10rem
-    }
-    /* .swiper-slide {
-        margin-left: 10px;
-        margin-right: 10px;
-      } */
-      div .swiper-pagination-bullets.swiper-pagination-horizontal {
-
-        bottom: 110px;
-    }
     .top-icons img {
         height: 64px;
     }
     .top-icons a img{
         width: 64px;
+    }
+
+    .card img {
+        width: 64px;
+        height: 64px;
     }
 
     .footer-text {
@@ -256,16 +255,6 @@
 
     .section-resume p {
         font-size: 28px;
-    }
-    div .swiper-pagination-bullets.swiper-pagination-horizontal {
-
-        bottom: 120px;
-    }
-    .top-icons img, .icons img {
-        height: 72px;
-    }
-    .top-icons a img, .icons img{
-        width: 72px;
     }
 
     .footer-text {
