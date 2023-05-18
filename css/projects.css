@@ -60,13 +60,21 @@ div.image-projeto-2 {
 }
 
 div.image-projeto-3 {
-    background-image: url(../img/Em\ Breve.png);
+    background-image: url(../img/barb.png);
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center center;
 }
 
 div.image-projeto-4 {
+    background-image: url(../img/tlou.png);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center;
+}
+
+
+div.image-projeto-5 {
     background-image: url(../img/Em\ Breve.png);
     background-size: cover; 
     background-repeat: no-repeat; 
