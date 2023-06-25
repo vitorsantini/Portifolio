@@ -1,5 +1,6 @@
 const navItems = document.querySelectorAll('.mobile-nav-item');
 const navList = document.querySelector('.mobile-menu-list');
+const mobileMenu = document.querySelector("#mobile-menu-icon");
 
 
 function AnimatedLinks(){
@@ -12,6 +13,7 @@ function AnimatedLinks(){
 
 function removeActive() {
     navList.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
     AnimatedLinks();
   }
   
